@@ -1,0 +1,27 @@
+﻿@model IEnumerable<FurnitureBoard>
+
+
+<div class="container-fluid">
+    <a class="btn btn-primary" asp-controller="FurnitureBoard" asp-action="Create"> Złóż zamowienie</a>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Wysokość</th>
+                <th>Szerokość</th>
+                <th>Liczba</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var x in @Model)
+            {
+            <tr>
+                <td>@x.Height</td>
+                <td>@x.Width</td>
+                <td>@x.Amount</td>
+                <td>@x.Price</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

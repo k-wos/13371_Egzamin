@@ -50,7 +50,7 @@ namespace _13371_Egzamin
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=FurnitureBoard}/{action=Create}/{id?}");
             });
         }
     }
